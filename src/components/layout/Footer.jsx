@@ -4,7 +4,6 @@ import { COMPANY_NAME, PORTAL_URL, TAGLINE } from '@/constants/links';
 const FOOTER_LINKS = [
   { to: '/', label: 'Home' },
   { to: '/features', label: 'Features' },
-  { to: '/contact', label: 'Contact' },
   { href: PORTAL_URL, label: 'Portal', external: true },
 ];
 

@@ -5,7 +5,6 @@ import { GradientButton } from '@/components/ui/GradientButton';
 const NAV_ITEMS = [
   { to: '/', label: 'Home', end: true },
   { to: '/features', label: 'Features' },
-  { to: '/contact', label: 'Contact' },
 ];
 
 export function Navbar() {
@@ -47,13 +46,9 @@ export function Navbar() {
             <GradientButton
               href={PORTAL_URL}
               external
-              variant="secondary"
               className="text-center"
             >
               Login
-            </GradientButton>
-            <GradientButton to="/contact" className="text-center">
-              Get Started
             </GradientButton>
           </div>
         </div>
