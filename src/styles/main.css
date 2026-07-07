@@ -441,17 +441,42 @@ a {
   flex-shrink: 0;
 }
 
+.screenshots-section .section-container--screenshots {
+  max-width: 1320px;
+}
+
+.screenshots-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
 .screenshot-card {
   overflow: hidden;
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
+}
+
+.screenshot-image-wrap {
+  background: #eef2f7;
+  line-height: 0;
+  padding: 0.5rem;
+}
+
+.screenshot-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: top center;
 }
 
 .screenshot-card .screenshot-label {
-  padding: 1rem 1.25rem;
+  padding: 1.15rem 1.5rem;
   font-weight: 700;
   color: var(--gb-navy);
   border-top: 1px solid var(--gb-border);
   background: var(--gb-surface);
-  font-size: 0.95rem;
+  font-size: 1.1rem;
 }
 
 .text-navy {
