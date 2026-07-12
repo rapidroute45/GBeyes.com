@@ -207,6 +207,28 @@ a {
   font-size: 1.35rem;
   color: var(--gb-navy);
   letter-spacing: -0.02em;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.site-navbar .navbar-brand-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+}
+
+.mock-screenshot {
+  background: var(--gb-surface);
+  line-height: 0;
+}
+
+.mock-screenshot-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: top left;
 }
 
 .site-navbar .nav-link {
@@ -243,6 +265,15 @@ a {
   font-weight: 800;
   font-size: 1.25rem;
   color: var(--gb-white);
+}
+
+.site-footer .footer-brand-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  background: #fff;
 }
 
 .cta-band {

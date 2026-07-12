@@ -15,7 +15,10 @@ export function Footer() {
       <div className="section-container">
         <div className="row g-4 g-lg-5">
           <div className="col-lg-5">
-            <p className="footer-brand mb-2">{COMPANY_NAME}</p>
+            <p className="footer-brand mb-2 d-flex align-items-center gap-2">
+              <img src="/logo.png" alt="" className="footer-brand-logo" width={36} height={36} />
+              {COMPANY_NAME}
+            </p>
             <p className="mb-0 small">{TAGLINE}</p>
           </div>
 

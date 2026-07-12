@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { COMPANY_NAME, PORTAL_URL } from '@/constants/links';
 import { GradientButton } from '@/components/ui/GradientButton';
+import logo from '@/assets/logo.png';
 
 const NAV_ITEMS = [
   { to: '/', label: 'Home', end: true },
@@ -11,8 +12,9 @@ export function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg site-navbar sticky-top">
       <div className="section-container d-flex flex-wrap align-items-center justify-content-between w-100">
-        <NavLink className="navbar-brand" to="/">
-          {COMPANY_NAME}
+        <NavLink className="navbar-brand d-flex align-items-center gap-2" to="/" aria-label={COMPANY_NAME}>
+          <img src={logo} alt="" className="navbar-brand-logo" width={40} height={40} />
+          <span className="visually-hidden">{COMPANY_NAME}</span>
         </NavLink>
 
         <button
